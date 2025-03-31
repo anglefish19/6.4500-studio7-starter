@@ -12,6 +12,9 @@ if (localStorage.tasks) {
 	for (let task of tasks) {
 		addItem(task);
 	}
+	if (tasks.length == 0) {
+		addItem();
+	}
 }
 else {
 	// Add one empty task to start with
